@@ -444,7 +444,7 @@ function Library:CreateWindow(title, color)
                 -- Toggle Code
                 local ToggleCallback = callback
 
-                game.RunService.Heartbeat:Connect(function()
+                Game:GetService("RunService").Heartbeat:Connect(function()
                     if (checkbox.BackgroundColor3 == oldcolor) then
                         checkbox.BackgroundColor3 = color
                     end
@@ -1488,5 +1488,6 @@ function Library:CreateWindow(title, color)
 
     return WinTypes, BracketV2
 end
+
 
 return Library
