@@ -1,6 +1,8 @@
 -- ui lib
 local Library = {}
 
+local RunService = game:GetService("RunService")
+
 function Library:GetColor(color, table)
     table = table or false
     if (color.R == nil) then return Color3.fromRGB(19, 119, 255) end
@@ -1488,5 +1490,6 @@ function Library:CreateWindow(title, color)
 
     return WinTypes, BracketV2
 end
+
 
 return Library
